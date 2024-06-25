@@ -1,0 +1,18 @@
+.CommonSearch{
+    display: flex;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.CommonSearch .items{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: #FFFFFFE6;
+    cursor: pointer;
+}
+
+.CommonSearch .items:not(:first-child){
+    margin-left: 10px;
+}

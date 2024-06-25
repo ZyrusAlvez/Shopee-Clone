@@ -1,17 +1,24 @@
 import "./css/Header.css"
-import UpperRight from "./UpperRight";
-import UpperLeft from "./UpperLeft";
-import Search from "../search/Search";
+import UpperRight from "./UpperLeft";
+import UpperLeft from "./UpperRight";
+import Search from "./Search";
+import CommonSearch from "./CommonSearch";
+
+import { useState } from "react";
 
 export default function Header(){
+
+    const [search, setSearch] = useState("")
+
     return(
         <header>
             <div className="top-div">
                 <UpperRight/>
                 <UpperLeft/>
             </div>
-            <div>
-                <Search/>
+            <div className="search-div">
+                <Search search={search}/>
+                <CommonSearch setSearch={setSearch}/>
             </div>
         </header>
     );

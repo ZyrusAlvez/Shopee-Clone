@@ -1,26 +1,29 @@
 .UpperRight{
-    display: flex;
-    height: 30px;
-}
-
-.UpperRight .item{
     font-family: 'Roboto';
     font-weight: 300;
     font-size: 0.8125rem;
     color: white ;
-    /* 0.8125rem or 13px */
+    display: flex;
 }
 
-.UpperRight .fb , .ig{
-    vertical-align:middle;
-    font-size: 1rem;
-    padding-left: 10px;
-    color: white
+.UpperRight .icon{
+    vertical-align: middle;
+    padding-right: 5px;
+    font-size: 1rem;    
 }
 
 .UpperRight .div{
     font-size: 1.2rem;
     font-weight: 100;
     color: hsla(0, 0%, 100%, 0.674);
+    padding-left: 5px;
 }
 
+.UpperRight .notification, .help, .english, .log-in{
+    display: flex;
+    padding-left: 10px;
+}
+
+.UpperRight .log-in{
+    font-weight : bold;
+}

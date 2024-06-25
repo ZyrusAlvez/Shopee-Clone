@@ -3,11 +3,21 @@ header{
     height: 119px;  
     background-color: #ee4d2d;
     width: 100%;
+
+    display: flex;
+    flex-direction: column;
 }
 
-.top-div{
+header .top-div{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 35px;
+    padding: 0 35px;
+}
+
+header .search-div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    align-self: center;
 }

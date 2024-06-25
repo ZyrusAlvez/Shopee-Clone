@@ -1,29 +1,27 @@
 .UpperLeft{
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.UpperLeft .item{
     font-family: 'Roboto';
     font-weight: 300;
     font-size: 0.8125rem;
     color: white ;
-    display: flex;
+    /* 0.8125rem or 13px */
 }
 
-.UpperLeft .icon{
-    vertical-align: middle;
-    padding-right: 5px;
-    font-size: 1rem;    
+.UpperLeft .fb , .ig{
+    vertical-align:middle;
+    font-size: 1rem;
+    padding-left: 10px;
+    color: white
 }
 
 .UpperLeft .div{
     font-size: 1.2rem;
     font-weight: 100;
     color: hsla(0, 0%, 100%, 0.674);
-    padding-left: 5px;
-}
-
-.UpperLeft .notification, .help, .english, .log-in{
-    display: flex;
-    padding-left: 10px;
-}
-
-.UpperLeft .log-in{
-    font-weight : bold;
 }
