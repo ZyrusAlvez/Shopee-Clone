@@ -1,0 +1,13 @@
+header{
+    position: fixed;
+    height: 119px;  
+    background-color: #ee4d2d;
+    width: 100%;
+}
+
+.top-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 35px;
+}

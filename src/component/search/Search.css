@@ -1,0 +1,35 @@
+.Search{
+    width: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.Search button{
+    background-color: #ee4d2d;
+    color: white;
+    border: 0;
+    border-radius: 2px;
+    height: 30px;
+    width: 60px;
+    margin-right: 5px;
+}
+
+.Search input{
+    height: 34px;
+    width: 90%;
+    border: 0;
+    margin-left: 5px;
+}
+
+.Search input:focus{
+    outline: 0;
+} 
+
+
+.Search .icon{
+    font-size: 1rem;
+    vertical-align: middle;
+}
