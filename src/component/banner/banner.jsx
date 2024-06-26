@@ -4,6 +4,7 @@ import slideBanner2 from "../../assets/home-banner-slide-2.png"
 import slideBanner3 from "../../assets/home-banner-slide-3.png"
 import slideBanner4 from "../../assets/home-banner-slide-4.png"
 import slideBanner5 from "../../assets/home-banner-slide-5.png"
+import slideBanner6 from "../../assets/home-banner-slide-6.png"
 import sideBanner1 from "../../assets/home-banner-1.png"
 import sideBanner2 from "../../assets/home-banner-2.png"
 
@@ -14,7 +15,7 @@ import { useState, useEffect, useRef } from "react"
 
 export default function Banner(){
 
-    const slideBanners = [slideBanner1, slideBanner2, slideBanner3, slideBanner4, slideBanner5];
+    const slideBanners = [slideBanner1, slideBanner2, slideBanner3, slideBanner4, slideBanner5, slideBanner6];
 
     const index = useRef(0)
     const [currentSlide, setCurrentSlide] = useState(slideBanners[index.current])
