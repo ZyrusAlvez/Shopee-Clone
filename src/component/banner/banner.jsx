@@ -7,6 +7,9 @@ import slideBanner5 from "../../assets/home-banner-slide-5.png"
 import sideBanner1 from "../../assets/home-banner-1.png"
 import sideBanner2 from "../../assets/home-banner-2.png"
 
+import { IoMdArrowDropright } from "react-icons/io";
+import { IoMdArrowDropleft } from "react-icons/io";
+
 import { useState, useEffect, useRef } from "react"
 
 export default function Banner(){
@@ -23,28 +26,39 @@ export default function Banner(){
                 index.current = 0;
             }
             setCurrentSlide(slideBanners[index.current]);
-            console.log(index.current);
         }, 4000);
 
         return () => clearInterval(interval); // Clear the interval when the component unmounts (clean up)
     }, [slideBanners]); 
 
 
-    function selectFromDot(i){
-        setCurrentSlide(slideBanners[i])
+    function showBanner(i){
         index.current = i
-        console.log(i)
+        if (index.current >= slideBanners.length) {
+            index.current = 0;
+        } else if (index.current < 0){
+            index.current = slideBanners.length - 1
+        }
+        
+        setCurrentSlide(slideBanners[index.current])
     }
 
     return (
         <div className="Banner">
             <div className="banner-1-div">
                 <img src={currentSlide}/>
+
+                <div className="button-right" onClick={() => showBanner(index.current + 1)}>
+                    <IoMdArrowDropright />
+                </div>
+                <div className="button-left" onClick={() => showBanner(index.current - 1)}>
+                    <IoMdArrowDropleft />
+                </div>
                 
                 <div className="carousel">
                     {slideBanners.map((e, i) => <div 
                     className={`dots ${index.current === i ? "active" : ""}`}
-                    onClick={() => selectFromDot(i)} 
+                    onClick={() => showBanner(i)} 
                     key={i}></div>)}
                 </div>
 
