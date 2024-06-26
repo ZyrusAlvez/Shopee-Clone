@@ -7,7 +7,7 @@ header{
     flex-direction: column;
 
     position: fixed;
-    z-index: 2;
+    z-index: 99;
     top: 0
 }
 

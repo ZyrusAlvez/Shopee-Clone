@@ -62,7 +62,7 @@
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 100%;
-    z-index: 99;
+    z-index: 2;
     background-color: rgba(128, 128, 128, 0.418);
     cursor: pointer;
 }
