@@ -1,0 +1,55 @@
+.Banner{
+    margin-top: 30px;
+    width: 95%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.Banner .banner-1-div{
+    width: 65%;
+    position: relative;
+}
+
+.Banner .banner-1-div img{
+    width: 100%;
+}
+
+.Banner .carousel{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.Banner .carousel .dots{
+    border: 1px solid gray;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 100%;
+    z-index: 99;
+    background-color: rgba(128, 128, 128, 0.418);
+    cursor: pointer;
+}
+
+.Banner .carousel .dots.active{
+    background-color: rgba(238, 77, 45, 0.9);
+    border: none;
+    width: 10px;
+    height: 10px;
+}
+
+.Banner .side-banner-div{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    gap: 5px;
+    margin-left: 5px;
+}
+
+.Banner .side-banner-div img{
+    width: 100%;
+}
+

@@ -1,6 +1,6 @@
 .CommonSearch{
     display: flex;
-    margin-top: 5px;
+    margin-top: 8px;
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -10,7 +10,7 @@
     font-size: 0.75rem;
     font-weight: 300;
     color: #FFFFFFE6;
-    cursor: pointer;
+    cursor: pointer;overflow: hidden;
 }
 
 .CommonSearch .items:not(:first-child){

@@ -1,11 +1,14 @@
 header{
-    position: fixed;
     height: 119px;  
     background-color: #ee4d2d;
     width: 100%;
 
     display: flex;
     flex-direction: column;
+
+    position: fixed;
+    z-index: 2;
+    top: 0
 }
 
 header .top-div{
@@ -27,4 +30,5 @@ header .search-div{
     margin-left: 20px;
     align-self: center;
     width: 60%;
+    min-width: 40%;
 }

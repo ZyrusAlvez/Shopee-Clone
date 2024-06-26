@@ -4,6 +4,7 @@
     font-size: 0.8125rem;
     color: white ;
     display: flex;
+    align-items: center;
 }
 
 .UpperRight .icon{
