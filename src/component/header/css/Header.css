@@ -32,3 +32,11 @@ header .search-div{
     width: 60%;
     min-width: 40%;
 }
+
+@media (width <= 900px){
+    header .top-div{
+        margin-top: 1%;
+        justify-content: end;
+        
+    }
+}

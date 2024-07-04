@@ -25,3 +25,9 @@
     font-weight: 100;
     color: hsla(0, 0%, 100%, 0.674);
 }
+
+@media (width <= 900px){
+    .UpperLeft{
+        display: none;
+    }
+}
