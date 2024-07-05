@@ -1,6 +1,54 @@
 .Categories{
     margin-top: 1%;
     width: 95%;
-    height: 20%;
+    height: auto;
     background-color: white;
+    margin-bottom: 10px;
+}
+
+.Categories .main-div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.Categories .mover{
+    display: flex;
+    justify-content: start;
+    overflow: hidden;
+}
+
+.Categories .container{
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+}
+
+
+.Categories .right, .left{
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    font-size: 2rem;
+    top: 135px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Categories .right{
+    right: -15px;
+}
+
+.Categories .left{
+    left: -15px;
+}
+
+/* how can I exactly center an absolute display vertically */
+
+.Categories .right:hover, .left:hover{
+    font-size: 3rem;
+    top: 42%
 }

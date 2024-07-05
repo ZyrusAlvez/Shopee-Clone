@@ -16,3 +16,9 @@
 .CommonSearch .items:not(:first-child){
     margin-left: 10px;
 }
+
+@media (width <= 900px){
+    .CommonSearch{
+        display: none;
+    }
+}
