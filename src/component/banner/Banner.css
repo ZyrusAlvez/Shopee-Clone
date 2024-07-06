@@ -1,88 +1,83 @@
-.Banner{
-    margin-top: 2%;
-    width: 95%;
-    
-    display: flex;
-    justify-content: center;
+.Banner {
+  margin-top: 2%;
+  width: 95%;
+
+  display: flex;
+  justify-content: center;
 }
 
-.Banner .banner-1-div{
-    width: 75%;
-    position: relative;
+.Banner .banner-1-div {
+  width: 75%;
+  position: relative;
 }
 
-
-
-.Banner .banner-1-div .button-right, .button-left{
-    display: none;
-    position: absolute;
-    width: 5%;
-    height: 40%;
-    font-size: 300%;
-    color: white;
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.429);
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+.Banner .banner-1-div .button-right,
+.button-left {
+  display: none;
+  position: absolute;
+  width: 5%;
+  height: 40%;
+  font-size: 300%;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.429);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.Banner .banner-1-div .button-left{
-    top: 35%;
+.Banner .banner-1-div .button-left {
+  top: 35%;
 }
 
-
-.Banner .banner-1-div .button-right{
-    top: 35%;
-    right: 0
+.Banner .banner-1-div .button-right {
+  top: 35%;
+  right: 0;
 }
 
-
-.Banner .banner-1-div:hover .button-left, .banner-1-div:hover .button-right{
-    display: flex;
+.Banner .banner-1-div:hover .button-left,
+.banner-1-div:hover .button-right {
+  display: flex;
 }
 
-
-
-.Banner .banner-1-div img{
-    width: 100%;
+.Banner .banner-1-div img {
+  width: 100%;
 }
 
-.Banner .carousel{
-    display: flex;
-    gap: 10px;
-    position: absolute;
-    bottom: 1rem;
-    width: 100%;
-    justify-content: center;
+.Banner .carousel {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  justify-content: center;
 }
 
-.Banner .carousel .dots{
-    border: 1px solid gray;
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 100%;
-    z-index: 2;
-    background-color: rgba(128, 128, 128, 0.418);
-    cursor: pointer;
+.Banner .carousel .dots {
+  border: 1px solid gray;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 100%;
+  z-index: 2;
+  background-color: rgba(128, 128, 128, 0.418);
+  cursor: pointer;
 }
 
-.Banner .carousel .dots.active{
-    background-color: rgba(238, 77, 45, 0.9);
-    border: none;
-    width: 10px;
-    height: 10px;
+.Banner .carousel .dots.active {
+  background-color: rgba(238, 77, 45, 0.9);
+  border: none;
+  width: 10px;
+  height: 10px;
 }
 
-.Banner .side-banner-div{
-    display: flex;
-    flex-direction: column;
-    width: 37%;
-    gap: 5px;
-    margin-left: 5px;
+.Banner .side-banner-div {
+  display: flex;
+  flex-direction: column;
+  width: 37%;
+  gap: 5px;
+  margin-left: 5px;
 }
 
-.Banner .side-banner-div img{
-    width: 100%;
+.Banner .side-banner-div img {
+  width: 100%;
 }
-

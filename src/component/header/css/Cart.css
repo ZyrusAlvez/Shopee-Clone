@@ -1,9 +1,9 @@
-.Cart{
-    display: flex;
-    align-items: center;
+.Cart {
+  display: flex;
+  align-items: center;
 }
 
-.Cart .icon{
-    color: white;
-    font-size: 1.8rem;
+.Cart .icon {
+  color: white;
+  font-size: 1.8rem;
 }

@@ -1,4 +1,4 @@
-import "./css/Header.css"
+import "./css/Header.css";
 import UpperRight from "./UpperLeft";
 import UpperLeft from "./UpperRight";
 import Search from "./Search";
@@ -8,27 +8,24 @@ import Cart from "./Cart";
 
 import { useState } from "react";
 
-export default function Header(){
+export default function Header() {
+  const [search, setSearch] = useState("");
 
-    const [search, setSearch] = useState("")
+  return (
+    <header>
+      <div className="top-div">
+        <UpperRight />
+        <UpperLeft />
+      </div>
 
-    return(
-        <header>
-
-            <div className="top-div">
-                <UpperRight/>
-                <UpperLeft/>
-            </div>
-
-            <div className="low-div">
-                <Logo/>
-                <div className="search-div">
-                    <Search search={search} setSearch={setSearch}/>
-                    <CommonSearch setSearch={setSearch}/>
-                </div>
-                <Cart/>
-            </div>
-
-        </header>
-    );
+      <div className="low-div">
+        <Logo />
+        <div className="search-div">
+          <Search search={search} setSearch={setSearch} />
+          <CommonSearch setSearch={setSearch} />
+        </div>
+        <Cart />
+      </div>
+    </header>
+  );
 }
