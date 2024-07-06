@@ -37,7 +37,7 @@ export default function Categories(){
 
     return(
         <div className="Categories">
-            <div className="title">
+            <div className="title-text">
                 CATEGORIES
             </div>
 

@@ -6,6 +6,13 @@
     margin-bottom: 10px;
 }
 
+.Categories .title-text{
+    font-family: 'Roboto';
+    margin: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+}
+
 .Categories .main-div{
     position: relative;
     display: flex;
@@ -51,4 +58,12 @@
 .Categories .right:hover, .left:hover{
     font-size: 3rem;
     top: 42%
+}
+
+.Categories .right:hover{
+    right: -25px;
+}
+
+.Categories .left:hover{
+    left: -25px;
 }
