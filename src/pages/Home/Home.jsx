@@ -1,18 +1,27 @@
 import "./Home.css";
+
 import Header from "../../component/header/Header.jsx";
-import Banner from "../../component/banner/banner.jsx";
+import Banner from "../../component/banner/Banner.jsx";
 import Promo from "../../component/promo/Promo.jsx";
 import Categories from "../../component/categories/Categories.jsx";
+import About from "../../component/about/About.jsx";
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <main className="content">
+      <header>
+        <Header />
+      </header>
+
+      <main>
         <Banner />
         <Promo />
         <Categories />
       </main>
+
+      <footer>
+        <About />
+      </footer>
     </>
   );
 }

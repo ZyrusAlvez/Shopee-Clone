@@ -1,0 +1,32 @@
+.about {
+  font-family: "Roboto";
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.content {
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+}
+
+.title {
+  margin-top: 4vh;
+  font-size: 1.4rem;
+}
+
+.title:nth-child(1) {
+  margin-top: 8vh;
+}
+
+.space {
+  height: 2.5vh;
+}
+
+.underline {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.p {
+  margin-top: 3vh;
+  font-size: 0.9rem;
+}
