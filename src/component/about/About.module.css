@@ -1,33 +1,32 @@
-.Footer {
-  border-top: 5px solid #ee4d2d;
+.about {
   font-family: "Roboto";
   color: rgba(0, 0, 0, 0.55);
 }
 
-.Footer .content {
+.content {
   margin-left: 2.5vw;
   margin-right: 2.5vw;
 }
 
-.Footer h1 {
+.title {
   margin-top: 4vh;
   font-size: 1.4rem;
 }
 
-.Footer h1:nth-child(1) {
+.title:nth-child(1) {
   margin-top: 8vh;
 }
 
-.Footer div {
+.space {
   height: 2.5vh;
 }
 
-.Footer span {
+.underline {
   text-decoration: underline;
   cursor: pointer;
 }
 
-.Footer p {
+.p {
   margin-top: 3vh;
   font-size: 0.9rem;
 }

@@ -1,0 +1,33 @@
+.UpperRight {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 0.8125rem;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  vertical-align: middle;
+  padding-right: 5px;
+  font-size: 1rem;
+}
+
+.div {
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: hsla(0, 0%, 100%, 0.674);
+  padding-left: 5px;
+}
+
+.notification,
+.help,
+.english,
+.sign {
+  display: flex;
+  padding-left: 10px;
+}
+
+.sign {
+  font-weight: bold;
+}

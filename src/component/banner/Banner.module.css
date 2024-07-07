@@ -1,4 +1,4 @@
-.Banner {
+.banner {
   margin-top: 2%;
   width: 95%;
 
@@ -6,13 +6,12 @@
   justify-content: center;
 }
 
-.Banner .banner-1-div {
+.mainBannerDiv {
   width: 75%;
   position: relative;
 }
 
-.Banner .banner-1-div .button-right,
-.button-left {
+.buttonRight, .buttonLeft {
   display: none;
   position: absolute;
   width: 5%;
@@ -26,25 +25,25 @@
   cursor: pointer;
 }
 
-.Banner .banner-1-div .button-left {
+.buttonLeft {
   top: 35%;
 }
 
-.Banner .banner-1-div .button-right {
+.buttonRight {
   top: 35%;
   right: 0;
 }
 
-.Banner .banner-1-div:hover .button-left,
-.banner-1-div:hover .button-right {
+.mainBannerDiv:hover .buttonLeft,
+.mainBannerDiv:hover .buttonRight {
   display: flex;
 }
 
-.Banner .banner-1-div img {
+.mainBanner{
   width: 100%;
 }
 
-.Banner .carousel {
+.carousel {
   display: flex;
   gap: 10px;
   position: absolute;
@@ -53,7 +52,7 @@
   justify-content: center;
 }
 
-.Banner .carousel .dots {
+.dots {
   border: 1px solid gray;
   width: 0.5rem;
   height: 0.5rem;
@@ -63,14 +62,15 @@
   cursor: pointer;
 }
 
-.Banner .carousel .dots.active {
+/* this selects the elements that has both class name of dots and active */
+.dots.active {
   background-color: rgba(238, 77, 45, 0.9);
   border: none;
   width: 10px;
   height: 10px;
 }
 
-.Banner .side-banner-div {
+.sideBannerDiv{
   display: flex;
   flex-direction: column;
   width: 37%;
@@ -78,6 +78,6 @@
   margin-left: 5px;
 }
 
-.Banner .side-banner-div img {
+.sideBanner{
   width: 100%;
 }

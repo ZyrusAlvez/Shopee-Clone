@@ -1,5 +1,5 @@
-import "./Promo.css";
-import PromoCard from "./PromoCard.jsx";
+import style from "./Promo.module.css";
+import Card from "./Card.jsx";
 import { FaCoins } from "react-icons/fa6";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { FaShoppingBag } from "react-icons/fa";
@@ -11,19 +11,40 @@ import { FaCartArrowDown } from "react-icons/fa";
 import { FaLaptop } from "react-icons/fa";
 import { MdDiscount } from "react-icons/md";
 
-export default function Promo(){
-    return(
-        <div className="Promo">
-            <PromoCard logo={<FaCoins className="logo"/>} title="Coins Rewards"/>
-            <PromoCard logo={<CiDeliveryTruck className="logo"/>} title="Free Shipping"/>
-            <PromoCard logo={<FaShoppingBag className="logo"/>} title="Shopee Mall"/>
-            <PromoCard logo={<TbTruckReturn className="logo"/>} title="Return on the Spot"/>
-            <PromoCard logo={<FaCheckSquare className="logo"/>} title="Shopee Choice Daily ₱299"/>
-            <PromoCard logo={<GiLargeDress className="logo"/>} title="Shopee Styles"/>
-            <PromoCard logo={<GiLipstick className="logo"/>} title="Shopee Beauty"/>
-            <PromoCard logo={<FaCartArrowDown className="logo"/>} title="Shopee Supermarket"/>
-            <PromoCard logo={<FaLaptop className="logo"/>} title="Gadget Zone"/>
-            <PromoCard logo={<MdDiscount className="logo"/>} title="Partner Promos"/>
-        </div>
-    )
+export default function Promo() {
+  return (
+    <div className={style.promo}>
+      <Card logo={<FaCoins className={style.logo} />} title="Coins Rewards" />
+      <Card
+        logo={<CiDeliveryTruck className={style.logo} />}
+        title="Free Shipping"
+      />
+      <Card
+        logo={<FaShoppingBag className={style.logo} />}
+        title="Shopee Mall"
+      />
+      <Card
+        logo={<TbTruckReturn className={style.logo} />}
+        title="Return on the Spot"
+      />
+      <Card
+        logo={<FaCheckSquare className={style.logo} />}
+        title="Shopee Choice Daily ₱299"
+      />
+      <Card
+        logo={<GiLargeDress className={style.logo} />}
+        title="Shopee Styles"
+      />
+      <Card logo={<GiLipstick className={style.logo} />} title="Shopee Beauty" />
+      <Card
+        logo={<FaCartArrowDown className={style.logo} />}
+        title="Shopee Supermarket"
+      />
+      <Card logo={<FaLaptop className={style.logo} />} title="Gadget Zone" />
+      <Card
+        logo={<MdDiscount className={style.logo} />}
+        title="Partner Promos"
+      />
+    </div>
+  );
 }

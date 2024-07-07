@@ -1,0 +1,33 @@
+.search {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  background-color: #ee4d2d;
+  color: white;
+  border: 0;
+  border-radius: 2px;
+  height: 30px;
+  width: 60px;
+  margin-right: 5px;
+}
+
+.input {
+  height: 34px;
+  width: 90%;
+  border: 0;
+  margin-left: 5px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.icon {
+  font-size: 1rem;
+  vertical-align: middle;
+}

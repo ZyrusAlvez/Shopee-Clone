@@ -1,4 +1,4 @@
-import "./Banner.css";
+import style from "./Banner.module.css";
 import slideBanner1 from "../../assets/home-banner-slide-1.png";
 import slideBanner2 from "../../assets/home-banner-slide-2.png";
 import slideBanner3 from "../../assets/home-banner-slide-3.png";
@@ -46,30 +46,46 @@ export default function Banner() {
   }
 
   return (
-    <div className="Banner">
-      <div className="banner-1-div">
-        <img src={slideBanners[index]} alt="Banner slide" />
+    <div className={style.banner}>
+      <div className={style.mainBannerDiv}>
+        <img
+          className={style.mainBanner}
+          src={slideBanners[index]}
+          alt="Banner slide"
+        />
 
-        <div className="button-right" onClick={() => showBanner(index + 1)}>
+        <div
+          className={style.buttonRight}
+          onClick={() => showBanner(index + 1)}
+        >
           <IoMdArrowDropright />
         </div>
-        <div className="button-left" onClick={() => showBanner(index - 1)}>
+        <div className={style.buttonLeft} onClick={() => showBanner(index - 1)}>
           <IoMdArrowDropleft />
         </div>
 
-        <div className="carousel">
+        <div className={style.carousel}>
           {slideBanners.map((_, i) => (
             <div
-              className={`dots ${index === i ? "active" : ""}`}
+              // the class name is automatically style.dots and if the condition is met, style.active will be added
+              className={`${style.dots} ${index === i ? style.active : ""}`}
               onClick={() => showBanner(i)}
               key={i}
             ></div>
           ))}
         </div>
       </div>
-      <div className="side-banner-div">
-        <img src={sideBanner1} alt="Side banner 1" />
-        <img src={sideBanner2} alt="Side banner 2" />
+      <div className={style.sideBannerDiv}>
+        <img
+          src={sideBanner1}
+          alt="Side banner 1"
+          className={style.sideBanner}
+        />
+        <img
+          src={sideBanner2}
+          alt="Side banner 2"
+          className={style.sideBanner}
+        />
       </div>
     </div>
   );

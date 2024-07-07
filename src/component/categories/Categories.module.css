@@ -1,0 +1,75 @@
+.categories {
+  margin-top: 1%;
+  width: 95%;
+  height: auto;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-family: "Roboto";
+  margin: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+
+.mainDiv {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.mover {
+  display: flex;
+  justify-content: start;
+  overflow: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+}
+
+.right,
+.left {
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* this will vertically center an absolute display */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.right {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.left {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.right:hover,
+.left:hover {
+  font-size: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.right:hover {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.left:hover {
+  left: 0;
+  transform: translate(-50%, -50%);
+}

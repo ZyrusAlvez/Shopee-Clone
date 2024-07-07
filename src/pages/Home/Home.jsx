@@ -1,21 +1,27 @@
-import './Home.css'
-import Header from '../../component/header/Header.jsx';
-import Banner from '../../component/banner/banner.jsx';
-import Promo from '../../component/promo/Promo.jsx';
-import Categories from '../../component/categories/Categories.jsx';
-import Footer from '../../component/about/Footer.jsx';
+import style from "./Home.module.css";
 
-export default function Home(){
+import Header from "../../component/header/Header.jsx";
+import Banner from "../../component/banner/Banner.jsx";
+import Promo from "../../component/promo/Promo.jsx";
+import Categories from "../../component/categories/Categories.jsx";
+import About from "../../component/about/About.jsx";
+
+export default function Home() {
   return (
     <>
-      <Header/>
-      <main className='content'>
-        <Banner/>
-        <Promo/>
-        <Categories/>
+      <header>
+        <Header />
+      </header>
 
-        <Footer/>
+      <main className={style.main}>
+        <Banner />
+        <Promo />
+        <Categories />
       </main>
+
+      <footer className={style.footer}>
+        <About />
+      </footer>
     </>
   );
 }
