@@ -2,6 +2,8 @@ import "./App.css";
 import Home from "./pages/Home/Home.jsx";
 import LogIn from "./pages/Log/LogIn.jsx";
 import NotFound from "./pages/NotFound/NotFound.jsx";
+import ProductList from "./pages/Products/ProductList.jsx";
+import Product from "./pages/Products/product.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 
@@ -17,6 +19,14 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
     {
       path: '*',
       element: <NotFound/>
+    },
+    {
+      path: "/list",
+      element: <ProductList />
+    },
+    {
+      path: "/list/:id",
+      element: <Product />
     }
   ]);
 
