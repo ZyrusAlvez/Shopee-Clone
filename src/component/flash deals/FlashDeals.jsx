@@ -14,6 +14,7 @@ export default function FlashDeals() {
     }, 1000);
 
     return () => clearInterval(interval); // Cleanup on component unmount
+    // The cleanup function from the first execution runs, clearing the interval, ensuring no duplicate intervals exist.
   }, []);
 
   return (

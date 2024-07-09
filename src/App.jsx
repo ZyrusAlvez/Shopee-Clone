@@ -1,19 +1,29 @@
-import "./App.css"
-
+import "./App.css";
 import Home from "./pages/Home/Home.jsx";
 import LogIn from "./pages/Log/LogIn.jsx";
 import NotFound from "./pages/NotFound/NotFound.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import { Routes, Route } from "react-router-dom";
+
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Home />,
+    },
+    {
+      path: '/log',
+      element: <LogIn />
+    },
+    {
+      path: '*',
+      element: <NotFound/>
+    }
+  ]);
 
 export default function App() {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/log" element={<LogIn />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <RouterProvider router={router} />
     </>
   );
 }
