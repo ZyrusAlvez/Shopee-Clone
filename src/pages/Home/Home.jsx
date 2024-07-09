@@ -5,6 +5,7 @@ import Banner from "../../component/banner/Banner.jsx";
 import Promo from "../../component/promo/Promo.jsx";
 import Categories from "../../component/categories/Categories.jsx";
 import About from "../../component/about/About.jsx";
+import FlashDeals from "../../component/flash deals/FlashDeals.jsx";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Banner />
         <Promo />
         <Categories />
+        <FlashDeals />
       </main>
 
       <footer className={style.footer}>

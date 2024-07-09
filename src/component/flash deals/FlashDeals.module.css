@@ -1,0 +1,37 @@
+.main{
+    margin-top: 2%;
+    width: 95%;
+    background-color: #FFF;
+    height: 25vh;
+}
+
+.title{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #ee4d2d;
+    font-size: 2rem;
+}
+
+.upperDiv{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.timerDiv{
+    display: flex;
+    font-family: "Courier";
+    margin-left: 10px;
+}
+
+.timer{
+    color: #FFF;
+    background-color: black;
+    border-radius: 10%;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-weight: bold;
+}
